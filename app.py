@@ -23,7 +23,7 @@ from unidecode import unidecode
 app = Flask(__name__)
 
 # Replace with your Roboflow API key
-ROBOFLOW_API_KEY = 'NmAbA1QRNGTcU3m5SNKG'
+ROBOFLOW_API_KEY ='YOUR API KEY'
 # Create a Roboflow instance with your API key
 rf = Roboflow(api_key=ROBOFLOW_API_KEY)
 
@@ -41,7 +41,7 @@ weapons = ["Knife", "pistol", "grenade"]
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'  # Replace with your email server
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USERNAME'] = 'crimedetectionproject@gmail.com'  # Replace with your email address
-app.config['MAIL_PASSWORD'] = 'pyrv xlfs zalm syxy'  # Replace with your email password
+app.config['MAIL_PASSWORD'] = 'YOUR PASSWORD'  # Replace with your email password
 app.config['MAIL_USE_TLS'] = True
 
 def send_email_notification(frame, location, object_name):
