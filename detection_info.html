@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detection Info</title>
+</head>
+<body>
+    <h1>Detection Info</h1>
+    
+    <p>Location: {{ location }}</p>
+    <p>Object Name: {{ object_name }}</p>
+    <p>Time Detected: {{ time_detected }}</p>
+    <img src="{{ url_for('video_feed') }}" alt="Weapon Detected" width="640" height="480">
+    <!-- Back to homepage button -->
+    <a href="/">Back to Homepage</a>
+</body>
+</html>

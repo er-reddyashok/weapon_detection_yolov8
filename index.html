@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Crime Detection</title>
+    <style>
+        /* Reset default margin and padding */
+        body, h1, form {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Define background image */
+        body {
+            background-image: url('static/images8.jpg'); /* Updated image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin-top: 20px;
+            background-color: black;
+            margin-top: 50px; /* Add some top margin to title */
+            background-color: rgba(0, 0, 0, 0.5); /* 50% opacity black background */
+            padding: 10px 20px; /* Add padding to create margin */
+            border-radius: 10px; /* Rounded corners for the box */
+            text-align: center; /* Center text horizontally */
+        }
+
+        /* Center content vertically and horizontally */
+        body, html {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column; /* Display title on top */
+            justify-content: flex-start; /* Align content to the top */
+            align-items: center; /* Center content horizontally */
+        }
+
+        /* Style the header */
+        h1 {
+            text-transform: uppercase;
+            color: black; /* You can adjust the color to your preference */
+            font-size: 45px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.5), 6px 6px 6px grey; /* Grey shadow */
+            font-family: 'Brush Script MT', cursive; /* Use Brush Script MT in cursive style */
+            margin-top: 60px; /* Add some space between top and h1 */
+        }
+
+        /* Style the button */
+        form {
+            margin-top: 20px; /* Add some top margin to the form */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button[type="submit"] {
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+            transform: translateY(0); /* Set transform to 0 to position at the top */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            border: 2px solid yellowgreen; 
+        }
+        button[type="submit"]:hover {
+            background-color: #fff; /* White background on hover */
+            color: #000; /* Black text on hover */
+            transform: translateY(-5px); /* Move the button up a bit on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Guardian AI-Live Crime Detection</h1>
+    <!-- Start or stop webcam buttons based on streaming status -->
+    <form action="/start_webcam" method="post">
+        <button type="submit">Try Out The Model</button>
+    </form>
+</body>
+</html>
